@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {  
+    height: 31.563rem;
+    width: 100%;
+    position: relative;
+}
+
+header figure {
+    position: relative;
+}
+
+.cabecalho{
+    margin-top: 4.313rem;
+    padding: 1.5rem;
+    position: absolute;
+}
+
+.cabecalho p{
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0.5rem;
+    margin-top: 1.5rem;
+    width: 23.813rem;
+    height: 8.25rem;
+}
+
+ h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 2rem;
+    height: 4rem;
+    width: 17.375rem;
+}
+
+header figure img {
+    width: 26.75rem;
+    height: 31.56rem;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+button {
+    width: 23.813rem;
+    height: 3.375rem;
+    border-radius: 28px;
+    font-size: 1rem;
+}
+
+.button1 {
+    color: #23272a;
+    margin: 1rem 0;
+}
+
+.button2 {
+    background-color: #23272a;
+    color:#ffffff;
+    border: none;
+}
+
+section {
+    color: #23272a;
+    padding: 2.5rem 1.5rem;
+}
+
+section p {
+    line-height: 1.375rem;
+    font-size: 1rem;
+}
+
+.section1 h2{
+    font-size: 1.5rem;
+    width: 23.125rem;
+    height: 6.188rem;
+    font-weight: 800;
+
+}
+
+.section1 p {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 23.625rem;
+    height: 5.5rem;
+    padding: 1rem 0;
+}
+
+.section2 {
+    background-color: #f6f6f6;
+}
+
+.section2 h2 {
+    width: 23.688rem;
+    height: 2.063rem;
+}
+
+.section2 p {
+    width: 23.625rem;
+    height: 5.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.section3 h2 {
+    width: 23.313rem;
+    height: 2.063rem;
+}
+
+.section3 p {
+    width: 23.625rem;
+    height: 5.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.section4 {
+    background-color: #f6f6f6;
+}
+
+.section4 h2{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    height: 4rem;
+}
+
+.section4 p {
+    padding: 2.5rem 0;
+    line-height: 1.375rem;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #23272a;
+    height: 7.5rem;
+    text-align: center;
+}
+
+footer img {
+    margin-top: 2.75rem;
+}
+
+@media only screen and (min-width: 427px){
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    header figure img {
+        width: 100%;
+    } 
+
+    header .cabecalho{
+       width: 100%;
+       text-align: center; 
+    }
+    .cabecalho h1 {
+        width: 100%;
+    }
+
+    .cabecalho p {
+        width: 100%;
+    }
+
+    main section {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+    
+    .section1 figure,
+    .section2 figure,
+    .section3 figure {
+        max-width: 37.938rem;
+        width: 100%;
+        margin-right: 1rem;
+    }
+
+    .section1 figure img,
+    .section2 figure img,
+    .section3 figure img  {
+        width: 100%;
+    }
+
+    .section1 h2,
+    .section2 h2{
+        height: auto;
+        font-size: 2.5rem;
+    }
+
+    .section1 div p,
+    .section2 div p{
+        max-width: 21.75rem;        
+    }
+
+    .section2 div{
+        align-content: center;
+        justify-content: center;
+        order: -1;  
+    }
+
+    .section1 div,
+    .section3 div {
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .section3 h2 {
+        height: auto;
+        font-size: 2.5rem; 
+        width: 20.563rem;
+    }
+
+    .section3 div p {
+        max-width: 20.563rem;        
+    }
+   
+    .section4 {
+        text-align: center;
+    }
+
+    .section4 h2 {
+        font-size: 2.5rem;
+        max-width: 38rem;
+        margin: 0 auto;
+    }
+     .section4 div p {
+        max-width: 50.125rem;  
+        text-align: justify;      
+    }   
+   
+    .section4 div figure img {
+        max-width: 49rem;
+        width: 100%;
+    }
+}
+
+    @media only screen and (min-width: 428px) and (max-width: 768px) {
+        section {
+            display: block;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section2 div {
+            order: 0;
+        }
+
+        .section1 div p,
+        .section2 div p, 
+        .section3 div p {
+            width: 100%;
+            max-width: 37.938rem;
+      }
+
+        .section1 div h2,
+        .section2 div h2,
+        .section3 div h2 {
+            width: 100%;
+            max-width: 37.938rem; 
+        }
+    }
+
+    @media only screen and (min-width:769px){
+        .buttons {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+}
